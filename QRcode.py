@@ -12,8 +12,16 @@ def Generate_qrcodes():
     images = qr.make_image(fill_color='black',back_color='white')
     images.save('Images/pypi_qrcode.jpg')
 
-if __name__ == "__main__":
 
+def Decode_data():
+    """The above fuction can decode the data hidden in qrcodes"""
+    image = cv.imread('Images/pypi_qrcode.jpg')
+    Qr_Code_Generator = cv.QRCodeDetector()
+    retVal ,point, stQr = Qr_Code_Generator.detectAndDecode(image)
+    print(retVal)
+
+if __name__ == "__main__":
     Generate_qrcodes()
+    Decode_data()
 
     print("Code Completed 🔥")
