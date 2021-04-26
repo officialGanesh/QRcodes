@@ -21,4 +21,4 @@ No, you can make another qrcode uisng the same data by changing factors like,
 5️⃣ back_color
 
 ## You Can Also Visit To The Official Website For More Information 👇
-[PyPi](https://pypi.org/project/qrcode/,"PyPi Home")
+[PyPi](https://pypi.org/project/qrcode/, "PyPi Home")
